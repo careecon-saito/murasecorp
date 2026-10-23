@@ -2,6 +2,20 @@
 html { -webkit-text-size-adjust: 100%; }
 img { max-width: 100%; }
 
+/* ---------- ロゴ（金色・黒地の画像から文字部分を切り出して表示） ---------- */
+/* 元画像 857×415 のうち、x128〜688 / y76〜304（560×228）を表示 */
+.brand-logo {
+  display: block;
+  flex: 0 0 auto;
+  aspect-ratio: 560 / 228;
+  background: url("https://d1i7na1hjknxjq.cloudfront.net/uploads/storage/image/file/115624/optimized_Ks-Byx4n6k48uVnqM26_pg.png") no-repeat;
+  background-size: 153.04% auto;
+  background-position: 43.1% 40.64%;
+  mix-blend-mode: screen; /* 画像の黒地をヘッダー・フッターの黒になじませる */
+}
+.brand-logo--header { height: clamp(50px, 4.4vw, 62px); }
+.brand-logo--footer { height: 72px; }
+
 /* PCでは非表示の要素 */
 .nav-burger { display: none; }
 .nav-m-only { display: none !important; }
@@ -10,7 +24,7 @@ img { max-width: 100%; }
   /* ---------- ヘッダー / ナビ ---------- */
   .site-header { min-height: 64px !important; }
   .site-header > a:first-child { padding: 10px 12px !important; }
-  .site-header > a:first-child img { width: 150px !important; max-height: 26px !important; }
+  .site-header .brand-logo--header { height: 48px; }
 
   .site-header .header-cta {
     font-size: 13px !important;
@@ -195,7 +209,7 @@ img { max-width: 100%; }
 }
 
 @media (max-width: 380px) {
-  .site-header > a:first-child img { width: 128px !important; }
+  .site-header .brand-logo--header { height: 42px; }
   .site-header .header-cta { padding: 0 10px !important; font-size: 12px !important; }
   .nav-burger { width: 48px; }
 }
