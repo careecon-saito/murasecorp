@@ -45,3 +45,12 @@ section.bg-black .lt-card {
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35) !important;
   border-color: transparent !important;
 }
+
+/* 黒背景のセクション内で、濃い色の文字を白系に（白いカード・ボックスの中は除く） */
+section.bg-black :is(h1, h2, h3, h4, p, span, li, a):not(.lt-card *):not(section.bg-black div[style*="background: rgb(255, 255, 255)"] *):is([style*="color: rgb(20, 20, 20)"], [style*="color: rgb(26, 26, 26)"], [style*="color: rgb(31, 31, 31)"], [style*="color: rgb(51, 51, 51)"]) {
+  color: #fff !important;
+}
+section.bg-black :is(p, span, li):not(.lt-card *):not(section.bg-black div[style*="background: rgb(255, 255, 255)"] *):is([style*="color: rgb(68, 68, 68)"], [style*="color: rgb(102, 102, 102)"], [style*="color: rgb(119, 119, 119)"]) {
+  color: #cfcfcf !important;
+}
+section.bg-black h2:not([style*="color"]) { color: #fff; }
