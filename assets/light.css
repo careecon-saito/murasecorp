@@ -8,45 +8,7 @@
   --lt-line: #e3e0dc;
 }
 
-/* ---------- ヘッダー：白 ---------- */
-.site-header {
-  background: #fff !important;
-  color: var(--lt-ink) !important;
-  box-shadow: 0 1px 0 var(--lt-line), 0 4px 12px rgba(0, 0, 0, 0.04);
-}
-.site-header > a:first-child img,
-footer img[src*="logo-white"] {
-  filter: brightness(0);
-  opacity: 0.85;
-}
-.site-nav a[style*="color: rgb(255, 255, 255)"] {
-  color: var(--lt-ink) !important;
-}
-.nav-burger span,
-.nav-burger span::before,
-.nav-burger span::after {
-  background: var(--lt-ink) !important;
-}
-.nav-burger[aria-expanded="true"] span { background: transparent !important; }
-@media (max-width: 900px) {
-  .site-nav {
-    background: #fff !important;
-    border-top: 1px solid var(--lt-line) !important;
-  }
-  .site-nav a { border-bottom: 1px solid var(--lt-line) !important; }
-}
-
-/* ---------- フッター：薄いグレー ---------- */
-footer {
-  background: var(--lt-bg) !important;
-  color: var(--lt-sub) !important;
-  border-top: 1px solid var(--lt-line);
-}
-footer [style*="color: rgb(255, 255, 255)"]:not([style*="background: rgb(255, 106, 31)"]) {
-  color: var(--lt-ink) !important;
-}
-footer [style*="color: rgb(204, 204, 204)"] { color: var(--lt-sub) !important; }
-footer [style*="border-top: 1px solid rgb(42, 42, 42)"] { border-top-color: var(--lt-line) !important; }
+/* ヘッダー・フッターは黒背景のまま（mobile.css・各ページの指定を使用） */
 
 /* ---------- 各ページの見出し帯：写真の上に白いベール ---------- */
 [data-screen-label="Page header"] {
