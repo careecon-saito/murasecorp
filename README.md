@@ -6,7 +6,8 @@ GitHub Pages 公開用のファイル一式です（通常のHTML・開いた瞬
 - index.html（TOP）
 - business.html（運送事業・よくある質問を掲載） / support.html（お片付けサポート・よくある質問を掲載） / about.html（ムラセコーポレイトとは）
 - vehicles.html（保有車両） / recruit.html（採用情報）
-- company.html（会社案内） / blog.html（ブログ） / contact.html（お問い合わせ）
+- company.html（会社案内） / blog.html（ブログ） / contact.html（お問い合わせ） / sitemap.html（サイトマップ）
+- sitemap.xml（検索エンジン向けサイトマップ。独自ドメインにする場合はURLを書き換えてください）
 - assets/logo-white.png（ロゴ）
 - .nojekyll（GitHub Pages 用の設定ファイル・削除しないでください）
 
