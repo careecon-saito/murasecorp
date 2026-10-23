@@ -54,3 +54,6 @@ section.bg-black :is(p, span, li):not(.lt-card *):not(section.bg-black div[style
   color: #cfcfcf !important;
 }
 section.bg-black h2:not([style*="color"]) { color: #fff; }
+
+/* 背景を白に固定するセクション（採用情報「募集要項」） */
+section.bg-plain { background: #fff !important; }
