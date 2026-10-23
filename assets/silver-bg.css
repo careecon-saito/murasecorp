@@ -1,0 +1,40 @@
+/* =========================================================
+   白い背景 → ヘアライン調のシルバー（assets/bg-silver.jpg）
+   - 文字が読みやすいよう白を少し重ねて明るめに
+   - カード・ボックスは白のまま、縁と影で背景から浮かせる
+   ========================================================= */
+:root {
+  --silver-bg:
+    linear-gradient(rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0.38)),
+    url("bg-silver.jpg") center / cover no-repeat,
+    #dcdcdc;
+}
+
+section[style*="background: rgb(255, 255, 255)"],
+section[style*="background: rgb(244, 244, 244)"],
+section[style*="background: rgb(250, 250, 250)"],
+section[style*="repeating-linear-gradient(118deg"],
+.lt-sec,
+[data-screen-label="Page header"] {
+  background: var(--silver-bg) !important;
+}
+[data-screen-label="Page header"] > img { display: none !important; }
+
+/* 白いカード・ボックスを背景から浮かせる */
+:is(section[style*="background: rgb(255, 255, 255)"], section[style*="background: rgb(244, 244, 244)"], section[style*="background: rgb(250, 250, 250)"], section[style*="repeating-linear-gradient(118deg"], .lt-sec)
+  :is(div, a, li)[style*="background: rgb(255, 255, 255)"],
+.lt-card {
+  box-shadow: 0 0 0 1px rgba(150, 155, 160, 0.35), 0 8px 22px rgba(60, 66, 74, 0.12) !important;
+}
+
+/* PCでは背景を画面に固定して、セクション間の継ぎ目が出ないようにする */
+@media (min-width: 901px) {
+  section[style*="background: rgb(255, 255, 255)"],
+  section[style*="background: rgb(244, 244, 244)"],
+  section[style*="background: rgb(250, 250, 250)"],
+  section[style*="repeating-linear-gradient(118deg"],
+  .lt-sec,
+  [data-screen-label="Page header"] {
+    background-attachment: fixed !important;
+  }
+}
