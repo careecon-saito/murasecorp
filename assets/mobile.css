@@ -120,6 +120,9 @@ img { max-width: 100%; }
   h2 { font-size: clamp(22px, 6.2vw, 30px) !important; line-height: 1.45 !important; }
   p, li, dd, dt, td, th { overflow-wrap: break-word; }
 
+  /* トップのMV見出し：1行に収まる大きさに */
+  [data-screen-label="01 Hero"] h1 { font-size: clamp(21px, 6.3vw, 32px) !important; }
+
   /* ---------- 余白 ---------- */
   section { padding-left: 0 !important; padding-right: 0 !important; }
   section > div { padding-left: 20px !important; padding-right: 20px !important; }

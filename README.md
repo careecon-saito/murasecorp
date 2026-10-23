@@ -4,7 +4,7 @@ GitHub Pages 公開用のファイル一式です（通常のHTML・開いた瞬
 
 ## 構成
 - index.html（TOP）
-- business.html（運送事業・保有車両・よくある質問を掲載） / support.html（お片付けサポート・よくある質問を掲載） / about.html（ムラセコーポレイトとは）
+- support.html（お片付けサポート・よくある質問を掲載） / business.html（運送事業・保有車両・よくある質問を掲載） / about.html（ムラセコーポレイトとは）
 - cases.html（事例） / recruit.html（採用情報）
 - company.html（会社案内） / blog.html（ブログ） / contact.html（お問い合わせ） / sitemap.html（サイトマップ）
 - sitemap.xml（検索エンジン向けサイトマップ。独自ドメインにする場合はURLを書き換えてください）
