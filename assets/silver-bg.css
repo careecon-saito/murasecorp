@@ -33,3 +33,16 @@ section.bg-silver,
     background-attachment: fixed !important;
   }
 }
+
+/* ---------- アクセントの黒背景（一部のセクションのみ） ---------- */
+section.bg-black {
+  background-color: rgb(29, 29, 29) !important;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.04) 0px, rgba(255, 255, 255, 0.04) 3px, transparent 3px, transparent 16px),
+    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.04) 0px, rgba(255, 255, 255, 0.04) 3px, transparent 3px, transparent 16px) !important;
+  color: #fff !important;
+}
+section.bg-black .lt-card {
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35) !important;
+  border-color: transparent !important;
+}
