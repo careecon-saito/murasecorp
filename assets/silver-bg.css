@@ -58,5 +58,8 @@ section.bg-black h2:not([style*="color"]) { color: #fff; }
 /* 背景を白に固定するセクション（採用情報「募集要項」） */
 section.bg-plain { background: #fff !important; }
 
-/* 見出し帯を白にするページ（お片付けサポート） */
-[data-screen-label="Page header"].band-white { background: #fff !important; }
+/* 各ページの見出し帯：全ページ白＋下端にオレンジの細いライン */
+[data-screen-label="Page header"] {
+  background: #fff !important;
+  border-bottom: 3px solid rgb(255, 106, 31) !important;
+}
