@@ -10,10 +10,8 @@
     #dcdcdc;
 }
 
-/* 白とシルバーを交互に（HTML側で bg-white / bg-silver を付与） */
-section.bg-white {
-  background: #fff !important;
-}
+/* 白だったセクションもシルバーに（bg-white / bg-silver どちらもシルバー。黒の bg-black は別） */
+section.bg-white,
 section.bg-silver,
 [data-screen-label="Page header"] {
   background: var(--silver-bg) !important;
@@ -28,6 +26,7 @@ section.bg-silver,
 
 /* PCでは背景を画面に固定して、セクション間の継ぎ目が出ないようにする */
 @media (min-width: 901px) {
+  section.bg-white,
   section.bg-silver,
   [data-screen-label="Page header"] {
     background-attachment: fixed !important;
